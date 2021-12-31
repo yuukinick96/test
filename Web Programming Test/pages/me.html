@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset = "UTF-8"/>
+	<title>My Website</title>
+
+
+	<style>
+		body, html {
+			height: 100%;
+			margin: 0;
+			color: white;
+			background-image: url(https://media.istockphoto.com/photos/dark-blue-de-focused-blurred-motion-abstract-background-picture-id1216628493?k=20&m=1216628493&s=612x612&w=0&h=PGifdN4ADl0gs6KuDFMbh7R4BgoxtJh-5ZVYXvgfHXw=);
+		}
+
+		.main-section1, .main-section2, .main-section3{
+			position:  relative;
+			opacity: 0.65;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 100px;
+		}
+
+.main-section1 {
+	background-image : url(https://media.istockphoto.com/photos/abstract-blurred-blue-background-with-double-exposure-of-bokeh-circle-picture-id1153938533?k=20&m=1153938533&s=612x612&w=0&h=NpOj69nt3PjOPIb4AI4DVa60MgoO1IjgZ-fEe3f7U6g=);
+
+}
+
+.main-section2 {
+	background-image : url(https://thumbs.dreamstime.com/b/green-gradient-background-bokeh-effect-abstract-blurred-pattern-overlapping-transparent-bubbles-circles-point-light-backdrop-117561434.jpg);
+	
+}
+
+.main-section3 {
+	background-image : url(https://thumbs.dreamstime.com/b/yellow-gradient-background-bokeh-68535417.jpg);
+	
+}
+
+.main-section4{
+	background-image : url(https://i.pinimg.com/originals/d7/44/64/d74464c335da51d2ae3fb51818b3c3c0.jpg);
+}
+		.sub-section1{
+			min-height: 400px;
+		}
+
+		.caption{
+			position: absolute;
+			left: 0;
+			top:  50%;
+			width: 100%;
+			text-align: center;
+			color:  black;
+		}
+@media only screen and (max-device: 1024px){
+	.main-section1{
+		background-attachment: scroll;
+	}
+
+.header{
+	width: 100%;
+	height: 70px;
+}
+.header > button{
+display: inline-flex;
+margin: 20px;
+}
+
+div{
+	position: relative;
+}
+
+.hdbtn{
+	float: right;
+	border: 2px solid white;
+	color: green;
+	padding:  5px 10px;
+	text-align: center;
+	background-color: lightblue;
+	margin-right: 20px;
+}
+h1{
+	color: white;
+}
+
+
+#firstname {
+	color: lightseagreen;
+}
+
+#firstname:hover{
+	animation: rainbow 2s infinite;
+}
+@keyframes rainbow{
+ 0%{ color: green; }
+ 25%{color: pink;}
+ 50%{color: orange;}
+ 75%{color: purple;}
+ 100%{color: grey;}
+}
+.title{
+	float: left;
+	width:  100%;
+	margin:  30px 0;
+	line-height: 24px;
+	text-align: center;
+}
+.title:after, .title:before{
+ backface-visibility: hidden;
+ border:  1px solid red;
+ bottom:  0px;
+ content: '';
+ display:  block;
+ margin:  0 auto;
+ position:  relative;
+ transition: all 280ms ease-in-out;
+width:  0;
+}
+
+.title:hover:after, .title:hover:before{
+	backface-visibility: hidden;
+	border-color: red;
+	transition: all 500ms ease-in-out;
+	width:  30%;
+}
+
+.title:hover:before{
+	bottom: 0;
+	top: 0;
+	width: 30%;
+}
+
+.profile{
+	-webkit-filter: brightness(50%);
+	-webkit-transition: all 1s ease;
+	-moz-transition:  all 1s ease;
+	-o-transition: a 1s ease;
+	-ms-transition: all 1s ease;
+	transition:  all 1s ease;
+}
+
+.profile:hover{
+	-webkit-filter: brightness(100%);
+}
+
+
+
+
+	</style>
+}
+
+</head>
+<body>
+	<div class="title">
+		<h1> Welcome to my Website</h1>
+	</div>
+	<hr size = "3"/>
+
+	<div class = "header">
+		<a href = "./pages/contact.html"> <button class = "hdbtn"> Contact</button></a>
+		<a href = "./pages/music.html"> <button class = "hdbtn"> Music</button></a>
+		<a href = "./pages/projects.html"> <button class ="hdbtn"> Projects </button></a>	
+		<a href = "./pages/me.html"> <button class = "hdbtn"> About Me</button></a>
+		
+	</div>
+		
+	<div class = "main-section1">
+		<div class = "caption">
+		</div>
+	</div>
+	<div class = "sub-section1">
+
+		<div class = "section1">
+	<table>
+		<tr>
+			<td> 
+				<div class = "container">
+				<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTID4PP3geRbxCeUO__iz8oK81tKP7px70BTg&usqp=CAU" class = "profile" style = "width: 300px;"/>
+			</div>
+			</td>
+			<td> <h2> <span id = "firstname">Yuuki</span> Munagamage</h2>
+				<p> STEM Instructor at <a href = "https://coboacademy.com"> Cobo Academy </a>.Engineering graduate from AIT, Thailand and City University of Hong Kong majoring in Telecommunications and BioMedical respectively. A rookie gamer and mostly on League of Legends and sometimes on Minecraft and Roblox. STEAM Enthusiatic</p>
+			</td>
+		</tr>
+	</table>
+		</div>
+	</div>
+
+	<div class = "main-section2">
+	<div class = "caption">
+		Coding Experience
+	</div>
+</div>
+<div class = "sub-section1">
+	<hr size = "3"/>
+	<h2> Coding Experience</h2>
+	<table border = "3">
+	<thead>
+		<th>Language</th>
+		<th>Project</th>
+	</thead>
+	<tr>
+		<td>Web Programming
+			<ol>
+				<li> HTML</li>
+				<li>CSS</li>
+				<li>JS</li>
+				<li>JQuery</li>
+			</ol>
+		</td>
+		<td>
+			<ol>
+				<li><a href="https://codepen.io/yuukinick96/full/QWKZJWx">BatteleShips</a></li>
+				<li><a href="https://codepen.io/yuukinick96/full/KKVRadp">Star Wars</a></li>
+				<li><a href="https://codepen.io/yuukinick96/full/RwPNpVV"> Pixel Art</a></li>
+			</ol>
+		</td>
+	</tr>
+	<tr>
+		<td>Minecraft</td>
+		<td>
+			<ol>
+				<li> Hide and Seek Game</li>
+				<li>Spleef Game</li>
+				<li>Castle</li>
+				<li>Lightning Arrow</li>
+			</ol>
+		</td>
+	</tr>
+</table>
+
+</div>
+<div class = "main-section3">
+	<div class = "caption">
+<h2 style="color: white;">Music</h2>
+</div>
+</div>
+<div class = "sub-section1">
+<p> My music genre is RnB and Pop. Click on this link to access my spotify playlist <iframe src="https://open.spotify.com/embed/playlist/4pXSSHKr6tWpSh1vUjYtkj?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></p>
+<div class = "video">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/VyHV0BRtdxo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+ 
+ </div>
+ <div class = "main-section1">
+ 	<div class = "caption"><h2>Contact Details</h2>
+ 	</div>
+ </div>
+ <div class = "sub-section1">
+ <a href = "./pages/contact.html"> Click here to contact me</a>
+</div>
+	</body>
+</html>
